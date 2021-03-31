@@ -8,7 +8,42 @@
 </head>
 
 <body>
-    
+    <!-- a div é um coringa, quando precisa fazer uma movimentação em grande escala, coloca dentro da div -->
+    <div id="container">
+
+        <!-- Criação de tags semanticas: -->
+        <!-- Identação é o espaçamento que dá para colocar as tags (são os tabs). Quando vai colocar um elemento dentro de outro, coloca o espaçamento para a direita. Vai formando como uma pirâmide. Cada um que vai dentro do outro, é como se fosse um "filho" -->
+        <!-- Então li é filho de ul, que é filho de nav, que é filho de header, que é filho de div, que é filho de body que é filho de html. -->
+        <!-- A partir da identação, consegue identificar os modelos mais internos e menos internos. -->
+        <header>
+            <nav>
+                <ul>
+                    <!-- O prof sempre cria um link para a própria pagina - href, e pede pra abrir na propria pagina - target (nao em uma nova) -->
+                    <li><a href="./index.html" target="_self" id="active">INÍCIO</a></li> 
+                    <!-- O prof vai criar 3 links na pagina: -->
+                    <li><a href="http://www.java.com">Java</a></li>
+                    <li><a href="https://www.python.org">Python</a></li>
+                    <li><a href="https://developer.mozilla.org">JavaScript</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- O prof vai criar uma section. É uma tag semantica, ele consegue dividir sua pagina em diversas sessões e usar como container tbm -->
+        <!-- Na sectionespera encontrar informações: imagens, menu... -->
+        <!-- Section, Side, Div, são muito parecidas de função -->
+        <section>
+            <div>
+                JAVA
+            </div>
+            <div>
+                PYTHON
+            </div>
+            <div>
+                JAVASCRIPT
+            </div>
+        </section>
+
+    </div>
 </body>
 
 </html>
